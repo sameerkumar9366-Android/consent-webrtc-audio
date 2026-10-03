@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Consent WebRTC Audio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="card">
+  <h1>🎙️ Consent Audio</h1>
+  <p>Live microphone audio works only after the microphone owner explicitly grants browser permission.</p>
+
+  <input id="room" placeholder="Enter shared room code">
+  <div class="row">
+    <button id="join">Join room</button>
+    <button id="mic" disabled>Allow & Start Mic</button>
+    <button id="stop" disabled>Stop Mic</button>
+  </div>
+
+  <div id="status">Not connected</div>
+  <audio id="remoteAudio" autoplay controls></audio>
+
+  <section>
+    <h2>Safe-use flow</h2>
+    <ol>
+      <li>Both devices enter the same room code.</li>
+      <li>The microphone owner presses <b>Allow & Start Mic</b>.</li>
+      <li>The browser displays its microphone permission prompt.</li>
+      <li>Only after permission is granted is the audio track shared.</li>
+      <li>The owner can press <b>Stop Mic</b> at any time.</li>
+    </ol>
+  </section>
+</main>
+<script src="/socket.io/socket.io.js"></script>
+<script src="app.js"></script>
+</body>
+</html>￼Enter
