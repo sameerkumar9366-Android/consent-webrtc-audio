@@ -1,0 +1,61 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  background: #f4f7fb;
+  color: #172033;
+}
+
+.card {
+  max-width: 720px;
+  margin: 30px auto;
+  padding: 24px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.08);
+}
+
+h1 {
+  margin-top: 0;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+button {
+  padding: 11px 15px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: .5;
+}
+
+#status {
+  margin: 16px 0;
+  padding: 10px;
+  background: #eef2f7;
+  border-radius: 8px;
+}
+
+audio {
+  width: 100%;
+  margin: 12px 0;
+}
+
+section {
+  margin-top: 20px;
+}￼Enter
